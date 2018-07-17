@@ -1,0 +1,89 @@
+/* ==========================================================================
+   #SCREEN META
+   ========================================================================== */
+
+
+/* Contextual Help
+========================================================================== */
+
+#contextual-help-wrap,
+#screen-options-wrap {
+  background: $trim-darker;
+  color: $white;
+
+  #adv-settings fieldset legend {
+    color: $primary;
+  }
+
+  #contextual-help-back {
+    border-left: 1px solid $primary;
+    border-right: 1px solid $primary;
+    background: $trim-darker;
+  }
+
+  .contextual-help-tabs ul {
+    background: $trim-darker;
+
+    li {
+
+      &.active,
+      &:hover {
+        border-left: 2px solid $primary;
+        background: $primary;
+        box-shadow: none;
+      }
+
+      a {
+        border: none;
+        color: $white;
+
+        &:focus {
+          box-shadow: none;
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+
+/* Contextual Help Link
+========================================================================== */
+
+#contextual-help-link-wrap,
+#screen-options-link-wrap {
+  border: 1px solid $primary;
+  border-top: none;
+  background: $primary;
+
+  .show-settings {
+    color: $white;
+    box-shadow: none;
+
+    &:hover,
+    &:focus {
+      color: $white;
+    }
+
+    &:after {
+      color: $white;
+    }
+
+  }
+
+}
+
+
+/* Handlediv
+========================================================================== */
+
+.handlediv:focus {
+
+  .toggle-indicator:before {
+    box-shadow: none !important;
+  }
+
+}

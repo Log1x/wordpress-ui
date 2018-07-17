@@ -1,0 +1,46 @@
+/* ==========================================================================
+   #FORMS
+   ========================================================================== */
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="color"]:focus,
+input[type="date"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="email"]:focus,
+input[type="month"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="text"]:focus,
+input[type="time"]:focus,
+input[type="url"]:focus,
+input[type="week"]:focus,
+input[type="checkbox"]:focus,
+input[type="radio"]:focus,
+select:focus, textarea:focus {
+  border-color: $primary;
+  box-shadow: 0 0 2px rgba($primary, 0.8);
+}
+
+input[type=checkbox]:checked:before {
+  color: $primary;
+}
+
+input[type=radio]:checked:before {
+  background: $primary;
+}
+
+.wp-core-ui input[type="reset"]:hover,
+.wp-core-ui input[type="reset"]:active {
+  color: $primary;
+}
+
+
+/* Select2
+========================================================================== */
+
+.select2-results .select2-highlighted {
+  background: $primary;
+}

@@ -1,0 +1,47 @@
+/* ==========================================================================
+   #THEMES
+   ========================================================================== */
+
+
+/* Theme Browser
+========================================================================== */
+
+.theme-browser .theme.active .theme-name,
+.theme-browser .theme.add-new-theme a:hover:after,
+.theme-browser .theme.add-new-theme a:focus:after {
+  background: $primary;
+}
+
+.theme-browser .theme.add-new-theme a:hover span:after,
+.theme-browser .theme.add-new-theme a:focus span:after {
+  color: $primary;
+}
+
+
+/* Theme Filter
+========================================================================== */
+
+.theme-section.current,
+.theme-filter.current {
+  border-bottom-color: $trim-darker;
+}
+
+body.more-filters-opened .more-filters {
+  color: $white;
+  background-color: $trim-darker
+}
+
+body.more-filters-opened .more-filters:before {
+  color: $white;
+}
+
+body.more-filters-opened .more-filters:hover,
+body.more-filters-opened .more-filters:focus {
+  background-color: $primary;
+  color: $white;
+}
+
+body.more-filters-opened .more-filters:hover:before,
+body.more-filters-opened .more-filters:focus:before {
+  color: $white;
+}

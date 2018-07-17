@@ -1,0 +1,63 @@
+/* ==========================================================================
+   #LINKS
+   ========================================================================== */
+
+a {
+  color: $primary;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $primary;
+    box-shadow: none;
+  }
+
+}
+
+
+/* Filter Links
+========================================================================== */
+
+.filter-links li a {
+
+  &:hover {
+    color: $primary;
+  }
+
+  &.current {
+    border-bottom: 4px solid $primary;
+  }
+
+}
+
+
+/* Media Upload / Widgets
+========================================================================== */
+
+#media-upload a.del-link:hover,
+div.dashboard-widget-submit input:hover,
+.subsubsub a:hover,
+.subsubsub a.current:hover {
+  color: $primary;
+}
+
+
+/* Page Title Links
+========================================================================== */
+
+#wpbody-content .wrap > a.page-title-action {
+  display: inline-block !important;
+  background-color: $primary;
+  border-color: $primary;
+  color: $white;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $primary;
+    border-color: $primary;
+    color: $white;
+    box-shadow: 0 0 2px rgba($primary, 0.8);
+  }
+
+}

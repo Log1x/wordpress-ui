@@ -1,0 +1,91 @@
+/* ==========================================================================
+   #CUSTOMIZER
+   ========================================================================== */
+
+
+/* Customize Controls
+========================================================================== */
+
+#customize-controls {
+
+
+  /* Customize Controls Help
+  ========================================================================== */
+
+  .customize-info .customize-help-toggle {
+
+    &:hover,
+    &:focus {
+      color: $primary;
+
+      &:before {
+        box-shadow: none !important;
+      }
+
+    }
+
+  }
+
+
+  /* Customize Controls Close
+  ========================================================================== */
+
+  .customize-controls-close {
+
+    &:hover,
+    &:focus {
+      color: $primary;
+      border-top-color: $primary;
+    }
+
+  }
+
+
+  /* Customize Controls Section / Accordions
+  ========================================================================== */
+
+  .control-section:hover > .accordion-section-title,
+  .control-section:focus > .accordion-section-title,
+  .control-section .accordion-section-title:focus,
+  .control-section .accordion-section:hover,
+  .control-section .accordion-section:focus,
+  .customize-section-back:hover,
+  .customize-section-back:focus {
+    color: $primary;
+    border-left-color: $primary;
+
+    &:after {
+      color: $primary;
+    }
+
+  }
+
+}
+
+
+/* Customize Footer Actions
+========================================================================== */
+
+#customize-footer-actions {
+
+  .devices button {
+
+    &.active,
+    &:focus {
+      border-bottom-color: $primary;
+
+      &:hover,
+      &:focus {
+        border-bottom-color: $primary;
+
+        &:before {
+          color: $primary;
+        }
+
+      }
+
+    }
+
+  }
+
+}

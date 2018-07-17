@@ -1,0 +1,12 @@
+# Application
+dist
+
+# Node Package Manager
+node_modules
+
+# Debug
+npm-debug.log
+yarn-error.log
+
+# Visual Studio Code
+.vscode

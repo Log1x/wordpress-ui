@@ -1,0 +1,224 @@
+/* ==========================================================================
+   #WORDPRESS LOGIN
+   ========================================================================== */
+
+
+/* Body
+========================================================================== */
+
+body.login {
+  display: flex;
+  align-content: center;
+  color: $white;
+  background-color: $primary;
+  font-weight: 500;
+
+  a {
+
+    &:focus {
+      color: $primary;
+      box-shadow: 0 0 0 1px $primary, 0 0 2px 1px rgba($primary, 0.8);
+    }
+
+  }
+
+}
+
+
+/* Auth Check
+========================================================================== */
+
+#wp-auth-check-wrap #wp-auth-check {
+  background-color: $primary;
+}
+
+
+/* Navigiation
+========================================================================== */
+
+.login #nav,
+.login #backtoblog {
+  display: none;
+}
+
+
+/* Login Box
+========================================================================== */
+
+#login {
+  padding: 0;
+
+  h1 {
+    width: 100%;
+    margin: 0 auto;
+
+    a {
+      background: $trim-darker;
+      border-radius: 50%;
+      font-size: 48px;
+      text-align: center;
+
+      &:after {
+        background: url($logo) center center no-repeat;
+        background-size: contain;
+        width: 48px;
+        height: 48px;
+        display: block;
+        text-indent: 0;
+        margin-top: -44px;
+      }
+
+    }
+
+  }
+
+}
+
+
+/* Login Message / Error
+========================================================================== */
+
+.login .message,
+.login #login_error {
+  background-color: $trim-darker;
+  color: $white;
+  border-left-color: $success;
+
+  a {
+    color: $link;
+  }
+
+}
+
+.login .message {
+  border-left-color: $success;
+}
+
+.login #login_error {
+  border-left-color: $danger;
+}
+
+
+/* Login Button
+========================================================================== */
+
+.login .button-primary {
+  padding: 4px 8px;
+}
+
+
+/* Login Submit
+========================================================================== */
+
+#wp-submit {
+  background: $primary;
+  border-color: darken($primary, 10%) darken($primary, 15%) darken($primary, 15%);
+  color: $white;
+  box-shadow: 0 1px 0 darken($primary, 15%);
+  text-shadow: 0 -1px 1px darken($primary, 15%), 1px 0 1px darken($primary, 15%), 0 1px 1px darken($primary, 15%), -1px 0 1px darken($primary, 15%);
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background: lighten($primary, 3%);
+    border-color: darken($primary, 15%);
+    color: $white;
+    box-shadow: 0 1px 0 darken($primary, 15%);
+  }
+
+  &:focus {
+    box-shadow: inset 0 1px 0 darken($primary, 10%), 0 0 2px 1px $box-shadow-color;
+  }
+
+  &:active {
+    background: darken($primary, 10%);
+    border-color: darken($primary, 15%);
+    box-shadow: inset 0 2px 0 darken($primary, 15%);
+  }
+
+  &[disabled],
+  &:disabled,
+  &.button-primary-disabled,
+  &.disabled {
+    color: hsl(hue($primary), 10%, 80%) !important;
+    background: darken($primary, 8%) !important;
+    border-color: darken($primary, 15%) !important;
+    text-shadow: none !important;
+  }
+
+  &.button-hero {
+    box-shadow: 0 2px 0 darken($primary, 15%) !important;
+  }
+
+  &:active {
+    box-shadow: inset 0 3px 0 darken($primary, 15%) !important;
+  }
+
+}
+
+
+/* Login Labels
+========================================================================== */
+
+.login {
+
+  #nav,
+  #backtoblog {
+    padding: 0 10px 0;
+  }
+
+  label {
+    color: darken($white, 15%);
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+
+}
+
+
+/* Login Form
+========================================================================== */
+
+#loginform,
+#resetpassform,
+#lostpasswordform {
+  border-radius: $radius;
+  background-color: $trim-darker;
+  box-shadow: 0 1px 3px rgba($trim-darker, .13);
+  padding: 25px;
+}
+
+
+/* Login Inputs
+========================================================================== */
+
+.login form input {
+
+  &[type="text"],
+  &[type="password"] {
+    background-color: $trim-darker;
+    color: $white;
+    border-color: $trim-dark;
+    padding: 4px 8px;
+    margin-top: 5px;
+  }
+
+  &[type="checkbox"] {
+    background-color: $trim-darker;
+    box-shadow: inset 0 0 2px rgba($trim, 0.4);
+    border-color: $black;
+
+    &:checked:before {
+      color: $white;
+    }
+
+  }
+
+  &:focus {
+    box-shadow: inset 0 0 2px rgba($trim-dark, 0.4);
+    border-color: $primary;
+  }
+
+}

@@ -1,0 +1,69 @@
+/* ==========================================================================
+   #SEO FRAMEWORK
+   ========================================================================== */
+
+#tsf-inpost-box {
+
+  .handlediv,
+  .hndle {
+    display: none;
+  }
+
+  .tsf-flex {
+
+    .tsf-flex-setting {
+
+      .tsf-flex-setting-label {
+        background: $trim-darker;
+        color: $white;
+        box-shadow: none;
+        flex: 1 1 75px;
+
+        .tsf-counter {
+          color: #999;
+        }
+
+        strong {
+          font-weight: $weight-normal;
+        }
+
+      }
+
+    }
+
+    .tsf-flex-nav-tab-wrapper {
+      border: 0;
+
+      .tsf-flex-nav-tab-inner {
+        background: $trim-darker;
+        color: $white;
+
+        .tsf-flex-nav-tab {
+
+          .tsf-flex-nav-tab-radio:checked + .tsf-flex-nav-tab-label {
+            box-shadow: none;
+            background: $primary;
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+
+/* SEO Framework Extension Bloat
+========================================================================== */
+
+#tsfem-actions-pane,
+#tsfem-feed-pane,
+.tsfem-top-account,
+.tsfem-top-about,
+.tsfem-footer-wrap,
+.tsfem-panes-row:first-child {
+  display: none !important;
+}

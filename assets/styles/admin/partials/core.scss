@@ -1,0 +1,107 @@
+/* ==========================================================================
+   #CORE
+   ========================================================================== */
+
+body {
+  background: $white-ter;
+  font-family: $family-primary;
+}
+
+.wp-core-ui {
+
+  .button-primary {
+    background: $primary;
+    border-color: darken($primary, 10%) darken($primary, 15%) darken($primary, 15%);
+    color: $white;
+    box-shadow: 0 1px 0 darken($primary, 15%);
+    text-shadow: 0 -1px 1px darken($primary, 15%), 1px 0 1px darken($primary, 15%), 0 1px 1px darken($primary, 15%), -1px 0 1px darken($primary, 15%);
+
+    &:hover,
+    &:focus {
+      background: lighten($primary, 3%);
+      border-color: darken($primary, 15%);
+      color: $white;
+      box-shadow: 0 1px 0 darken($primary, 15%);
+    }
+
+    &:focus {
+      box-shadow: inset 0 1px 0 darken($primary, 10%), 0 0 2px 1px $box-shadow-color;
+    }
+
+    &:active {
+      background: darken($primary, 10%);
+      border-color: darken($primary, 15%);
+      box-shadow: inset 0 2px 0 darken($primary, 15%);
+    }
+
+    &[disabled],
+    &:disabled,
+    &.button-primary-disabled,
+    &.disabled {
+      color: hsl(hue($primary), 10%, 80%) !important;
+      background: darken($primary, 8%) !important;
+      border-color: darken($primary, 15%) !important;
+      text-shadow: none !important;
+    }
+
+    &.button-hero {
+      box-shadow: 0 2px 0 darken($primary, 15%) !important;
+    }
+
+    &:active {
+      box-shadow: inset 0 3px 0 darken($primary, 15%) !important;
+    }
+
+  }
+
+  .wp-ui-primary {
+    color: $white;
+    background-color: $trim-darker;
+  }
+
+  .wp-ui-text-primary {
+    color: $trim-darker;
+  }
+
+  .wp-ui-highlight {
+    color: $white;
+    background-color: $primary;
+  }
+
+  .wp-ui-text-highlight,
+  .color {
+    color: $primary;
+  }
+
+  .wp-ui-notification {
+    color: $white;
+    background-color: $primary;
+  }
+
+  .wp-ui-text-notification {
+    color: $primary;
+  }
+
+  .wp-ui-text-icon {
+    color: $white;
+  }
+
+  .wp-full-overlay {
+
+    .collapse-sidebar {
+
+      &:hover,
+      &:focus {
+        color: $primary;
+
+        .collapse-sidebar-arrow {
+          box-shadow: none;
+        }
+
+      }
+
+    }
+
+  }
+
+}

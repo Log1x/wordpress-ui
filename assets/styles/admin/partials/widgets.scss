@@ -1,0 +1,13 @@
+/* ==========================================================================
+   #WIDGETS
+   ========================================================================== */
+
+.widgets-chooser li.widgets-chooser-selected {
+  background-color: $primary;
+  color: $white;
+}
+
+.widgets-chooser li.widgets-chooser-selected:before,
+.widgets-chooser li.widgets-chooser-selected:focus:before {
+  color: $white;
+}

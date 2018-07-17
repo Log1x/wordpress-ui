@@ -1,0 +1,518 @@
+/* ==========================================================================
+   #ACF
+   ========================================================================== */
+
+.acf-postbox .acf-fields,
+.widget-inside .widget-content {
+
+
+  /* ACF Icon
+  ========================================================================== */
+
+  a.acf-icon {
+
+    &:hover {
+      background: $primary !important;
+    }
+
+    &:focus {
+      color: $white !important;
+    }
+
+  }
+
+
+  /* ACF Field
+  ========================================================================== */
+
+  .acf-field {
+    min-height: 0 !important;
+
+    @include mobile() {
+      width: 100% !important;
+    }
+
+    &[data-width] {
+      float: none;
+    }
+
+
+    /* ACF Input
+    ========================================================================== */
+
+    .acf-field input[type="text"],
+    .acf-field input[type="password"],
+    .acf-field input[type="number"],
+    .acf-field input[type="search"],
+    .acf-field input[type="email"],
+    .acf-field input[type="url"],
+    .acf-field textarea,
+    .acf-field select {
+      font-size: 14px;
+      height: unset;
+    }
+
+
+    /* ACF Tooltip
+    ========================================================================== */
+
+    .acf__tooltip {
+      color: $primary;
+      size: 1rem;
+      margin: 0 0 0 3px;
+      font-size: 1rem;
+      cursor: help;
+    }
+
+
+    /* ACF Image Uploader
+    ========================================================================== */
+
+    .acf-image-uploader {
+
+      .acf-button {
+        display: block;
+        margin-top: 1em;
+        max-width: 6.5em;
+        text-align: center;
+      }
+
+    }
+
+
+    /* ACF Table Editor
+    ========================================================================== */
+
+    .acf-table-cell-editor {
+      border-color: $primary;
+
+      &:before,
+      &:after {
+        border-top-color: $primary;
+      }
+
+      .acf-table-cell-editor-textarea {
+        background-color: $dark;
+        color: $white;
+      }
+
+    }
+
+
+    /* ACF Tooltip
+    ========================================================================== */
+
+    .select2 {
+
+      .select2-selection__clear {
+        font-weight: normal;
+        margin-top: -4px;
+        right: 20px;
+        font-size: 26px;
+      }
+
+    }
+
+
+    /* ACF Switch
+    ========================================================================== */
+
+    .acf-switch {
+
+      &.-on {
+        background: $primary;
+        border-color: $primary;
+
+        .acf-switch-on {
+          text-shadow: $primary 0 1px 0;
+        }
+
+        .acf-switch-slider {
+          border-color: $primary;
+        }
+
+      }
+
+    }
+
+    .acf-fc-popup {
+      a:hover {
+        background: $primary;
+      }
+    }
+
+
+    /* ACF Relationship Field
+    ========================================================================== */
+
+    .acf-relationship .list .acf-rel-item {
+
+      &:hover {
+        background: $primary;
+      }
+
+    }
+
+
+    /* ACF Accordion Field
+    ========================================================================== */
+
+    &.acf-field--accordion {
+      background: #F4F4F4 !important;
+      margin-bottom: 25px !important;
+      transition: all $speed;
+      padding: 15px 25px !important;
+
+      &:before {
+        position: absolute;
+        content: '+';
+        font-size: 20px;
+        right: 20px;
+        top: 15px;
+        color: $black;
+      }
+
+      &.opened {
+
+        &:before {
+          content: '-';
+          font-size: 20px;
+        }
+
+      }
+
+      &:hover,
+      &.opened {
+        background: $primary !important;
+
+        h2 {
+          color: $white;
+        }
+
+        &:before {
+          color: $white;
+        }
+
+      }
+
+      h2 {
+        color: $black;
+
+        .dashicons-before:before {
+          display: none;
+        }
+
+      }
+
+    }
+
+    &.acf-accordion-group {
+      margin-top: -10px;
+      transition: all $speed;
+
+      &.opened {
+        transition: all $speed;
+        margin-top: -25px;
+        margin-bottom: 25px;
+      }
+
+    }
+
+
+    /* WP Content Editor
+    ========================================================================== */
+
+    #wp-content-editor-tools {
+      background: transparent;
+      padding-top: 0;
+    }
+
+  }
+
+}
+
+
+/* ACF Settings
+========================================================================== */
+
+.acf-settings-wrap {
+
+
+  /* ACF Settings Header
+  ========================================================================== */
+
+  h1 {
+    background: $primary;
+    color: $white;
+    font-size: 28px;
+    font-weight: $weight-normal;
+    padding: 75px 50px;
+
+    &:after {
+      content: 'Theme Options';
+      display: block;
+      font-size: 16px;
+      font-weight: $weight-light;
+      color: darken($white, 10%);
+    }
+
+  }
+
+
+  /* ACF Settings Notices
+  ========================================================================== */
+
+  .notice {
+    margin: 0 !important;
+  }
+
+
+  /* ACF Postbox
+  ========================================================================== */
+
+  .acf-postbox.seamless {
+    margin: 0;
+
+    > .inside {
+      margin: 0 !important;
+      padding: 10px 10px 10px 0 !important;
+    }
+
+  }
+
+  #poststuff {
+    padding-top: 0;
+  }
+
+  #post-body {
+    margin-right: 0 !important;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .postbox-container {
+    width: 100% !important;
+    float: none !important;
+    margin: 0 !important;
+  }
+
+  #post-body #postbox-container-1 {
+    order: 2;
+
+    .meta-box-sortables {
+      width: 100% !important;
+      min-height: 0;
+
+      .postbox {
+        min-width: 0;
+        max-width: 100%;
+        background: $trim-darker;
+        border: none;
+        margin-top: -25px;
+
+        .inside {
+
+          #major-publishing-actions {
+            background: transparent;
+            border: none;
+          }
+
+          #publishing-action {
+
+            @keyframes spin {
+              0% {
+                transform: rotate(0deg);
+              }
+
+              100% {
+                transform: rotate(360deg);
+              }
+            }
+
+            .spinner {
+              background: none;
+
+              &.is-active {
+                border-radius: 50%;
+                width: 18px;
+                height: 18px;
+                margin-right: 15px;
+                border: .25rem solid rgba($white, 0.2);
+                border-top-color: $white;
+                animation: spin 1s infinite linear;
+              }
+
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+
+  /* Handlediv
+  ========================================================================== */
+
+  .handlediv,
+  .hndle {
+    display: none !important;
+  }
+
+}
+
+
+/* ACF Seamless Display
+========================================================================== */
+
+.acf-postbox.seamless,
+.acf-postbox.stuffbox {
+  background: $white;
+  margin: 25px 0 50px 0;
+  position: relative;
+
+  .handlediv,
+  .hndle {
+    display: none;
+  }
+
+  .acf-fields.-sidebar {
+    margin: 0 !important;
+    padding: 10px 10px 10px 160px !important;
+
+    .acf-field-group {
+
+      .acf-field .acf-label label {
+        font-weight: $weight-normal;
+        margin-bottom: 0;
+      }
+
+    }
+
+
+    /* ACF Swatch List
+    ========================================================================== */
+
+    .acf-swatch-list {
+
+      > li {
+        display: inline-block;
+        width: 25%;
+
+        @include until($desktop) {
+          width: 50%;
+        }
+
+        input[type="radio"]:checked ~ .swatch-toggle .swatch-color {
+          border: 2px solid $trim-darker;
+        }
+
+        label {
+          font-weight: $weight-normal;
+
+          &:hover .swatch-toggle {
+            border-color: $trim-dark;
+          }
+
+        }
+
+      }
+
+    }
+
+
+    /* ACF Field
+    ========================================================================== */
+
+    > .acf-field,
+    > .acf-accordion-group .acf-field {
+      min-height: 0 !important;
+
+      @include mobile() {
+        width: 100% !important;
+      }
+
+      > .acf-label label {
+        font-weight: $weight-normal;
+        font-size: 1.1em;
+        margin-bottom: 8px;
+      }
+
+    }
+
+    &:before {
+      background: $trim-darker;
+      border-right: $trim-dark;
+      width: 150px;
+    }
+
+
+    /* ACF Tabs
+    ========================================================================== */
+
+    .acf-tab-wrap.-left {
+
+      .acf-tab-group {
+        width: 150px !important;
+        border: none;
+        margin-top: 0;
+
+        &:before {
+          display: block;
+          background: url($logo) center center no-repeat;
+          background-size: contain;
+          width: 56px;
+          height: auto;
+          padding: 35px 0;
+          margin: 25px auto;
+        }
+
+        li {
+          margin: 0;
+
+          a {
+            padding: 20px;
+            margin-right: 0;
+            border-radius: 0;
+            color: $white;
+            transition: color $speed, background-color $speed;
+            background: $trim-darker;
+            border: none;
+          }
+
+          &.active, &:hover {
+
+            a {
+              color: $white;
+              background: $primary;
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+
+/* ACF Popup
+========================================================================== */
+
+.acf-fc-popup {
+
+  a:hover {
+    background: $primary;
+  }
+
+}
