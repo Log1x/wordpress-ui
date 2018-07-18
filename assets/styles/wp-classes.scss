@@ -60,22 +60,22 @@
 .pagination {
 
   .prev {
-    @extend .pagination__previous;
+    @extend .pagination-previous;
   }
 
   .next {
-    @extend .pagination__next;
+    @extend .pagination-next;
   }
 
   .page-numbers {
-    @extend .pagination__link;
+    @extend .pagination-link;
 
     &.dots {
-      @extend .pagination__ellipsis;
+      @extend .pagination-ellipsis;
     }
 
     &.current {
-      @extend .pagination__link.is-active;
+      @extend .pagination-link.is-current;
     }
 
   }
