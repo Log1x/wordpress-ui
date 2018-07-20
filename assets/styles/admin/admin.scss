@@ -2,6 +2,10 @@
    #WORDPRESS ADMIN
    ========================================================================== */
 
+// Configuration
+@import '../config/variables';
+@import '../config/mixins';
+
 // Admin styles
 @import 'partials/core';
 @import 'partials/admin-bar';

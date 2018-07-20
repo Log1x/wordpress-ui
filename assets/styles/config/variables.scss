@@ -1,0 +1,44 @@
+///* ==========================================================================
+//   #VARIABLES
+//   ========================================================================== */
+
+// Colors
+$black: hsl(0, 0%, 4%) !default;
+$black-bis: hsl(0, 0%, 7%) !default;
+$black-ter: hsl(0, 0%, 14%) !default;
+
+$grey-darker: hsl(0, 0%, 21%) !default;
+$grey-dark: hsl(0, 0%, 29%) !default;
+$grey: hsl(0, 0%, 48%) !default;
+$grey-light: hsl(0, 0%, 71%) !default;
+$grey-lighter: hsl(0, 0%, 86%) !default;
+
+$white-ter: hsl(0, 0%, 96%) !default;
+$white-bis: hsl(0, 0%, 98%) !default;
+$white: hsl(0, 0%, 100%) !default;
+
+$trim-darker: hsl(0, 0%, 15%) !default;
+$trim-dark: hsl(0, 0%, 20%) !default;
+$trim: hsl(0, 0%, 27%) !default;
+$trim-light: hsl(0, 0%, 30%) !default;
+$trim-lighter: hsl(0, 0%, 35%) !default;
+
+$blue: hsl(217, 71%,  53%) !default;
+$green: hsl(141, 71%,  48%) !default;
+$red: hsl(348, 100%, 61%) !default;
+$yellow: hsl(54,  100%,  62%) !default;
+
+$primary: $blue !default;
+$info: $blue !default;
+$success: $green !default;
+$warning: $yellow !default;
+$danger: $red !default;
+
+// Typography
+$font-primary: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !default;
+
+// Logo
+$logo: '' !default;
+
+// Miscellaneous
+$speed: 86ms !default;

@@ -224,14 +224,14 @@
     background: $primary;
     color: $white;
     font-size: 28px;
-    font-weight: $weight-normal;
+    font-weight: 500;
     padding: 75px 50px;
 
     &:after {
       content: 'Theme Options';
       display: block;
       font-size: 16px;
-      font-weight: $weight-light;
+      font-weight: 300;
       color: darken($white, 10%);
     }
 
@@ -367,7 +367,7 @@
     .acf-field-group {
 
       .acf-field .acf-label label {
-        font-weight: $weight-normal;
+        font-weight: 500;
         margin-bottom: 0;
       }
 
@@ -392,7 +392,7 @@
         }
 
         label {
-          font-weight: $weight-normal;
+          font-weight: 500;
 
           &:hover .swatch-toggle {
             border-color: $trim-dark;
@@ -417,7 +417,7 @@
       }
 
       > .acf-label label {
-        font-weight: $weight-normal;
+        font-weight: 500;
         font-size: 1.1em;
         margin-bottom: 8px;
       }

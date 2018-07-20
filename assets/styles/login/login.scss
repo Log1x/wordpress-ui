@@ -2,5 +2,9 @@
    #WORDPRESS LOGIN
    ========================================================================== */
 
+// Configuration
+@import '../config/variables';
+@import '../config/mixins';
+
 // Login styles
 @import 'partials/core';
