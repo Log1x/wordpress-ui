@@ -114,8 +114,8 @@ body.login {
   background: $primary;
   border-color: darken($primary, 10%) darken($primary, 15%) darken($primary, 15%);
   color: $white;
-  box-shadow: 0 1px 0 darken($primary, 15%);
-  text-shadow: 0 -1px 1px darken($primary, 15%), 1px 0 1px darken($primary, 15%), 0 1px 1px darken($primary, 15%), -1px 0 1px darken($primary, 15%);
+  box-shadow: 0 1px 0 rgba($black, 0.15);
+  text-shadow: none;
   border: none;
   outline: none;
   cursor: pointer;
@@ -125,17 +125,13 @@ body.login {
     background: lighten($primary, 3%);
     border-color: darken($primary, 15%);
     color: $white;
-    box-shadow: 0 1px 0 darken($primary, 15%);
-  }
-
-  &:focus {
-    box-shadow: inset 0 1px 0 darken($primary, 10%), 0 0 2px 1px $box-shadow-color;
+    box-shadow: 0 1px 0 rgba($black, 0.15);
   }
 
   &:active {
     background: darken($primary, 10%);
     border-color: darken($primary, 15%);
-    box-shadow: inset 0 2px 0 darken($primary, 15%);
+    box-shadow: inset 0 2px 0 rgba($black, 0.15);
   }
 
   &[disabled],
@@ -149,11 +145,11 @@ body.login {
   }
 
   &.button-hero {
-    box-shadow: 0 2px 0 darken($primary, 15%) !important;
+    box-shadow: 0 2px 0 rgba($black, 0.15) !important;
   }
 
   &:active {
-    box-shadow: inset 0 3px 0 darken($primary, 15%) !important;
+    box-shadow: inset 0 3px 0 rgba($black, 0.15) !important;
   }
 
 }
@@ -207,7 +203,7 @@ body.login {
 
   &[type="checkbox"] {
     background-color: $trim-darker;
-    box-shadow: inset 0 0 2px rgba($trim, 0.4);
+    box-shadow: inset 0 0 2px rgba($black, 0.15);
     border-color: $black;
 
     &:checked:before {
@@ -217,7 +213,7 @@ body.login {
   }
 
   &:focus {
-    box-shadow: inset 0 0 2px rgba($trim-dark, 0.4);
+    box-shadow: inset 0 0 2px rgba($black, 0.15);
     border-color: $primary;
   }
 

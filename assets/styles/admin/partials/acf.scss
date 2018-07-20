@@ -157,63 +157,42 @@
     /* ACF Accordion Field
     ========================================================================== */
 
-    &.acf-field--accordion {
-      background: #F4F4F4 !important;
-      margin-bottom: 25px !important;
-      transition: all $speed;
-      padding: 15px 25px !important;
+    &.acf-accordion {
+      background: transparent;
+      border: 0 !important;
+      margin-bottom: 15px;
 
-      &:before {
-        position: absolute;
-        content: '+';
-        font-size: 20px;
-        right: 20px;
-        top: 15px;
-        color: $black;
+      .acf-accordion-title {
+        color: $white;
+        background: $trim-dark;
+        border: 1px solid $trim;
+        padding: 25px 15px;
+
+        label {
+          margin-bottom: 0 !important;
+        }
       }
 
-      &.opened {
+      .acf-accordion-content {
+        background: #f7f7f7;
+        border: 1px solid #f5f5f5;
 
-        &:before {
-          content: '-';
-          font-size: 20px;
+        .acf-fields {
+          &:first-child {
+            border-top: 0;
+          }
         }
-
       }
 
       &:hover,
-      &.opened {
-        background: $primary !important;
+      &.-open {
 
-        h2 {
+        .acf-accordion-title {
           color: $white;
+          background: $primary;
+          border-color: $primary;
         }
 
-        &:before {
-          color: $white;
-        }
-
-      }
-
-      h2 {
-        color: $black;
-
-        .dashicons-before:before {
-          display: none;
-        }
-
-      }
-
-    }
-
-    &.acf-accordion-group {
-      margin-top: -10px;
-      transition: all $speed;
-
-      &.opened {
-        transition: all $speed;
-        margin-top: -25px;
-        margin-bottom: 25px;
       }
 
     }
@@ -310,7 +289,6 @@
         max-width: 100%;
         background: $trim-darker;
         border: none;
-        margin-top: -25px;
 
         .inside {
 
@@ -455,6 +433,30 @@
 
     /* ACF Tabs
     ========================================================================== */
+
+    /* .acf-tab-wrap.-top {
+      background: $trim-darker;
+      color: $white;
+
+      .acf-tab-group {
+        li {
+          a {
+            background: $trim-dark;
+            color: $white;
+            border-color: $trim;
+          }
+
+          &.active,
+          &:hover {
+            a {
+              background: $primary;
+              border-color: $primary;
+              border-bottom: 0;
+            }
+          }
+        }
+      }
+    } */
 
     .acf-tab-wrap.-left {
 
