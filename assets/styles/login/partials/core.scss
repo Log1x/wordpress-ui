@@ -58,6 +58,7 @@ body.login {
       display: flex;
       justify-content: center;
       align-items: center;
+      width: 84px;
 
       &:after {
         background: url($logo) center center no-repeat;
