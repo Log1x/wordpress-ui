@@ -126,19 +126,24 @@
   color: mix($trim-darker, $white, 20%);
 }
 
-#wpadminbar #wp-admin-bar-site-name > .ab-item:before,
-.admin #wpadminbar #wp-admin-bar-site-name > .ab-item:before {
-  background: url($logo) center center no-repeat;
-  background-size: contain;
-  width: 16px;
-  height: 16px;
-  display: block;
-
+#wpadminbar #wp-admin-bar-site-name > .ab-item,
+.admin #wpadminbar #wp-admin-bar-site-name > .ab-item {
   @media screen and (max-width: 782px) {
-    height: 28px;
-    width: 28px;
-    font-size: 28px;
-    padding-top: 5px;
+    padding: 0 12px;
   }
 
+  &:before {
+    background: url($logo) center center no-repeat !important;
+    background-size: contain;
+    width: 16px;
+    height: 20px;
+    display: block;
+    content: '' !important;
+
+    @media screen and (max-width: 782px) {
+      height: 28px;
+      width: 28px;
+      padding-top: 5px;
+    }
+  }
 }
