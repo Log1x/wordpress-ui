@@ -1,0 +1,51 @@
+/* ==========================================================================
+   #HELPERS
+   ========================================================================== */
+
+
+/* Display
+========================================================================== */
+
+.is-block {
+  display: block;
+}
+
+@include mobile() {
+  .is-block-mobile {
+    display: block;
+  }
+}
+
+@include tablet() {
+  .is-block-tablet {
+    display: block;
+  }
+}
+
+@include desktop() {
+  .is-block-desktop {
+    display: block;
+  }
+}
+
+.is-inline-block {
+  display: inline-block;
+}
+
+@include mobile() {
+  .is-inline-block-mobile {
+    display: inline-block;
+  }
+}
+
+@include tablet() {
+  .is-inline-block-tablet {
+    display: inline-block;
+  }
+}
+
+@include desktop() {
+  .is-inline-block-desktop {
+    display: inline-block;
+  }
+}

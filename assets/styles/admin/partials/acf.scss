@@ -53,6 +53,15 @@
     }
 
 
+    /* ACF Range
+    ========================================================================== */
+
+    .acf-range-wrap input[type="number"] {
+      min-width: 4em !important;
+      text-align: center;
+    }
+
+
     /* ACF Tooltip
     ========================================================================== */
 
@@ -62,6 +71,29 @@
       margin: 0 0 0 3px;
       font-size: 1rem;
       cursor: help;
+    }
+
+
+    /* ACF Related Posts for WordPress
+    ========================================================================== */
+
+    .rp4wp_mb_manage {
+      display: flex;
+      flex-flow: wrap;
+
+      .rp4wp_button_holder {
+        display: flex;
+        float: none;
+        order: 1;
+        margin-left: auto;
+
+        span {
+          float: none;
+          margin-left: 0;
+        }
+
+      }
+
     }
 
 
@@ -99,7 +131,7 @@
     }
 
 
-    /* ACF Tooltip
+    /* Select2
     ========================================================================== */
 
     .select2 {

@@ -7,19 +7,20 @@
 @import '../config/mixins';
 
 // Admin styles
-@import 'partials/core';
+@import 'partials/acf';
 @import 'partials/admin-bar';
 @import 'partials/admin-menu';
+@import 'partials/core';
+@import 'partials/custom';
 @import 'partials/customizer';
 @import 'partials/forms';
+@import 'partials/helpers';
 @import 'partials/links';
 @import 'partials/media';
 @import 'partials/meta';
+@import 'partials/misc';
 @import 'partials/pointers';
 @import 'partials/tables';
 @import 'partials/themes';
-@import 'partials/widgets';
-@import 'partials/misc';
-@import 'partials/acf';
 @import 'partials/tsf';
-@import 'partials/custom';
+@import 'partials/widgets';
