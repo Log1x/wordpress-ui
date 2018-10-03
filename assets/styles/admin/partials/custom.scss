@@ -39,3 +39,23 @@
   }
 
 }
+
+
+/* Top 10
+========================================================================== */
+
+#tptn_pop_dashboard {
+  #tptn_popular_posts {
+    p:last-child {
+      display: none;
+    }
+  }
+}
+
+#tptn_pop_daily_dashboard {
+  #tptn_popular_posts_daily {
+    p:last-child {
+      display: none;
+    }
+  }
+}
