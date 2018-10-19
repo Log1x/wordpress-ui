@@ -59,6 +59,7 @@ body.login {
       justify-content: center;
       align-items: center;
       width: 84px;
+      font-size: 0 !important;
 
       &:after {
         background: url($logo) center center no-repeat;
@@ -84,6 +85,7 @@ body.login {
   background-color: $trim-darker;
   color: $white;
   border-left-color: $success;
+  font-size: 0.75rem;
 
   a {
     color: $link;
