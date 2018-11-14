@@ -38,7 +38,7 @@ $ yarn add git+ssh://git@github.com/log1x/wordpress-ui.git
 
 ```js
 /** import local components */
-import datetime from "wordpress-ui/assets/scripts/components/datetime";
+import datetime from 'wordpress-ui/assets/scripts/components/datetime';
 
 export default {
   init() {
