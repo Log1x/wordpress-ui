@@ -1,21 +1,17 @@
 {
   "name": "wordpress-ui",
-  "version": "1.0.0",
-  "contributors": [
-    {
-      "name": "Brandon Nifong",
-      "email": "brandon@tendency.me",
-      "url": "https://log1x.com"
-    }
-  ],
-  "homepage": "https://github.com/crediful/wordpress-ui",
+  "version": "1.0.5",
+  "author": "Brandon Nifong <brandon@tendency.me>",
+  "homepage": "https://github.com/log1x/wordpress-ui",
+  "private": true,
   "repository": {
     "type": "git",
-    "url": "git://github.com/crediful/wordpress-ui.git"
+    "url": "git://github.com/log1x/wordpress-ui.git"
   },
   "bugs": {
-    "url": "https://github.com/crediful/wordpress-ui/issues"
+    "url": "https://github.com/log1x/wordpress-ui/issues"
   },
+  "main": "assets/scripts/main.js",
   "scripts": {
     "build": "cross-env NODE_ENV=development webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
     "build:production": "npm run -s clean && cross-env NODE_ENV=production webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
@@ -31,15 +27,20 @@
     "node": ">= 6.9.4"
   },
   "devDependencies": {
-    "cross-env": "^5.1.0",
-    "eslint": "^4.7.1",
-    "eslint-loader": "^1.9.0",
-    "eslint-plugin-import": "^2.7.0",
-    "laravel-mix": "^1.4.5",
+    "browser-sync": "^2.26.0",
+    "browser-sync-webpack-plugin": "^2.2.2",
+    "cross-env": "^5.2.0",
+    "eslint": "^5.6.1",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-import": "^2.14.0",
+    "laravel-mix": "^2.1.14",
     "rimraf": "^2.6.2",
-    "stylelint": "^8.1.1",
-    "stylelint-scss": "^2.1.0",
-    "stylelint-webpack-plugin": "^0.9.0",
-    "webpack": "^3.6.0"
+    "stylelint": "^9.6.0",
+    "stylelint-scss": "^3.3.1",
+    "stylelint-webpack-plugin": "^0.10.5"
+  },
+  "dependencies": {
+    "dayjs": "^1.7.7",
+    "jquery": "^3.3.1"
   }
 }

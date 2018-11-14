@@ -1,12 +1,20 @@
 # Application
 dist
+cache
+.cache-loader
 
-# Node Package Manager
+# WP-CLI
+db-sync
+*.sql
+
+# Vendor
+vendor
 node_modules
 
 # Debug
 npm-debug.log
 yarn-error.log
 
-# Visual Studio Code
+# Environment
 .vscode
+.DS_Store

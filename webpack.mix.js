@@ -22,6 +22,14 @@ mix.sass(`${assets}/styles/admin/admin.scss`, `${dist}/styles/admin.css`)
    .sass(`${assets}/styles/login/login.scss`, `${dist}/styles/login.css`)
    .sass(`${assets}/styles/wp-classes.scss`, `${dist}/styles/wp-classes.css`);
 
+// Javascript
+mix.js(`${assets}/scripts/main.js`, `${dist}/scripts`);
+
+// Autoload
+mix.autoload({
+  jquery: ['$', 'window.jQuery']
+});
+
 // Options
 mix.options({
   processCssUrls: false,
@@ -34,5 +42,15 @@ if (!mix.inProduction()) {
 
 // Hash and version files in production.
 if (mix.inProduction()) {
-  mix.version();
+  mix.version()
+    .then(() => {
+      const manifest = File.find(`${dist}/mix-manifest.json`);
+      const json = JSON.parse(manifest.read());
+      Object.keys(json).forEach(key => {
+        const hashed = json[key];
+        delete json[key];
+        json[key.replace(/^\/+/g, '')] = hashed.replace(/^\/+/g, '');
+      });
+      manifest.write(JSON.stringify(json, null, 2));
+    });
 }

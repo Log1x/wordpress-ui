@@ -1,23 +1,24 @@
 # WordPress UI
 
-Here lives a modernized approach to the WordPress Admin UI built beside Bulma.
+Here lives a modernized approach to the WordPress Admin UI.
 
 ## Dependencies
 
 * [Node.js]
 * [Yarn]
-* [Bulma]
 
 ## Installation 
 
 ```sh
-$ yarn add git+ssh://git@github.com/crediful/wordpress-ui.git
+$ yarn add git+ssh://git@github.com/log1x/wordpress-ui.git
 ```
 
 ## Example Usage 
 
+### CSS
+
 ```scss
-// Bulma Configuration
+// Configuration
 @import '../config/functions';
 @import '../config/mixins';
 @import '../config/variables';
@@ -33,10 +34,25 @@ $ yarn add git+ssh://git@github.com/crediful/wordpress-ui.git
 @import '~wordpress-ui/admin-bar';
 ```
 
-### Development 
+### Javascript
+
+```js
+/** import local components */
+import datetime from "wordpress-ui/assets/scripts/components/datetime";
+
+export default {
+  init() {
+    datetime.init();
+  },
+
+  finalize() {},
+};
+```
+
+## Development 
 
 ```sh
-$ git clone https://github.com/crediful/wordpress-ui && cd wordpress-ui 
+$ git clone https://github.com/log1x/wordpress-ui && cd wordpress-ui 
 $ yarn install && yarn run build
 ```
 
@@ -47,4 +63,3 @@ Closed Source. Do not redistribute.
 
 [Yarn]: <https://yarnpkg.com/>
 [Node.js]: <https://nodejs.org/>
-[Bulma]: <https://bulma.io>
