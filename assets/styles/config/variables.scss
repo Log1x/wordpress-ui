@@ -34,8 +34,8 @@ $success: $green !default;
 $warning: $yellow !default;
 $danger: $red !default;
 
-$light: $white-ter;
-$dark: $grey-darker;
+$light: $white-ter !default;
+$dark: $grey-darker !default;
 
 // Typography
 $family-primary: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !default;
@@ -43,14 +43,22 @@ $family-primary: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxyge
 // Logo
 $logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 111 72'%3E%3Cpath fill='#{$primary}' fill-rule='evenodd' d='M87.12 0h23.04L87.12 72H66.96L55.44 33.552 43.92 72H23.76L.72 0h23.04l10.368 38.592L45.36 0h20.16l11.232 38.592z'/%3E%3C/svg%3E" !default;
 
+// Admin Bar
+$admin-bar: 2em !default;
+$admin-bar-mobile: 2.875em !default;
+
+$admin-bar-logo: $logo !default;
+$admin-bar-logo-width: 16px !default;
+$admin-bar-logo-height: 20px !default;
+
 // Grid
-$gap: 64px;
+$gap: 64px !default;
 
 // Breakpoints
-$tablet: 769px;
-$desktop: 960px + (2 * $gap);
-$widescreen: 1152px + (2 * $gap);
-$fullhd: 1344px + (2 * $gap);
+$tablet: 769px !default;
+$desktop: 960px + (2 * $gap) !default;
+$widescreen: 1152px + (2 * $gap) !default;
+$fullhd: 1344px + (2 * $gap) !default;
 
 // Miscellaneous
 $speed: 86ms !default;

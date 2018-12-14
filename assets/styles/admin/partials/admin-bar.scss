@@ -133,10 +133,10 @@
   }
 
   &:before {
-    background: url($logo) center center no-repeat !important;
+    background: url($admin-bar-logo) center center no-repeat !important;
     background-size: contain;
-    width: 16px;
-    height: 20px;
+    width: $admin-bar-logo-width;
+    height: $admin-bar-logo-height;
     display: block;
     content: '' !important;
 

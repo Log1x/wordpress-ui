@@ -11,11 +11,10 @@ const mix = require('laravel-mix');
  |
  */
 
-const assets = `assets`;
+const assets = 'assets';
 const dist = 'dist';
 
 mix.setPublicPath(dist);
-mix.setResourceRoot('../');
 
 // Sass
 mix.sass(`${assets}/styles/admin/admin.scss`, `${dist}/styles/admin.css`)
