@@ -17,11 +17,7 @@
     "build:production": "npm run -s clean && NODE_ENV=production webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
     "start": "NODE_ENV=development webpack --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
     "clean": "npm run -s clean:dist",
-    "clean:dist": "rimraf dist",
-    "lint": "npm run -s lint:scripts && npm run -s lint:styles",
-    "lint:scripts": "eslint assets/scripts",
-    "lint:styles": "stylelint 'assets/styles/**/*.{css,scss}' --fix --syntax scss",
-    "test": "npm run -s lint"
+    "clean:dist": "rimraf dist"
   },
   "engines": {
     "node": ">= 6.9.4"
