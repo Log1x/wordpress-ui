@@ -3,7 +3,6 @@
   "version": "1.1.0",
   "author": "Brandon Nifong <brandon@tendency.me>",
   "homepage": "https://github.com/log1x/wordpress-ui",
-  "private": true,
   "repository": {
     "type": "git",
     "url": "git://github.com/log1x/wordpress-ui.git"
