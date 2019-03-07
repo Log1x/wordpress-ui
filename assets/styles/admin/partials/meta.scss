@@ -2,7 +2,6 @@
    #SCREEN META
    ========================================================================== */
 
-
 /* Contextual Help
 ========================================================================== */
 
@@ -25,7 +24,6 @@
     background: $trim-darker;
 
     li {
-
       &.active,
       &:hover {
         border-left: 2px solid $primary;
@@ -40,15 +38,10 @@
         &:focus {
           box-shadow: none;
         }
-
       }
-
     }
-
   }
-
 }
-
 
 /* Contextual Help Link
 ========================================================================== */
@@ -68,22 +61,17 @@
       color: $white;
     }
 
-    &:after {
+    &::after {
       color: $white;
     }
-
   }
-
 }
-
 
 /* Handlediv
 ========================================================================== */
 
 .handlediv:focus {
-
-  .toggle-indicator:before {
+  .toggle-indicator::before {
     box-shadow: none !important;
   }
-
 }

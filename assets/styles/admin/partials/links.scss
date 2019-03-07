@@ -11,15 +11,12 @@ a {
     color: $primary;
     box-shadow: none;
   }
-
 }
-
 
 /* Filter Links
 ========================================================================== */
 
 .filter-links li a {
-
   &:hover {
     color: $primary;
   }
@@ -27,9 +24,7 @@ a {
   &.current {
     border-bottom: 4px solid $primary;
   }
-
 }
-
 
 /* Media Upload / Widgets
 ========================================================================== */
@@ -40,7 +35,6 @@ div.dashboard-widget-submit input:hover,
 .subsubsub a.current:hover {
   color: $primary;
 }
-
 
 /* Page Title Links
 ========================================================================== */
@@ -59,5 +53,4 @@ div.dashboard-widget-submit input:hover,
     color: $white;
     box-shadow: 0 0 2px rgba($primary, 0.4);
   }
-
 }

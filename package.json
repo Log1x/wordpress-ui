@@ -27,16 +27,18 @@
     "node": ">= 6.9.4"
   },
   "devDependencies": {
-    "laravel-mix": "^4.0.6",
-    "rimraf": "^2.6.2",
-    "sass": "^1.15.2",
-    "sass-loader": "7.*",
-    "stylelint": "^9.6.0",
-    "stylelint-scss": "^3.3.1",
-    "stylelint-webpack-plugin": "^0.10.5"
+    "laravel-mix": "^4.0.14",
+    "rimraf": "^2.6.3",
+    "sass": "^1.17.2",
+    "sass-loader": "^7.1.0",
+    "stylelint": "^9.10.1",
+    "stylelint-scss": "^3.5.4",
+    "stylelint-webpack-plugin": "^0.10.5",
+    "vue-template-compiler": "^2.6.8"
   },
   "dependencies": {
-    "dayjs": "^1.7.7",
-    "jquery": "^3.3.1"
+    "dayjs": "^1.8.9",
+    "jquery": "^3.3.1",
+    "stylelint-config-standard": "^18.2.0"
   }
 }

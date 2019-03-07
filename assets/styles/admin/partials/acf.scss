@@ -4,13 +4,10 @@
 
 .acf-postbox .acf-fields,
 .widget-inside .widget-content {
-
-
   /* ACF Icon
   ========================================================================== */
 
   a.acf-icon {
-
     &:hover {
       background: $primary !important;
     }
@@ -18,9 +15,7 @@
     &:focus {
       color: $white !important;
     }
-
   }
-
 
   /* ACF Field
   ========================================================================== */
@@ -35,7 +30,6 @@
     &[data-width] {
       float: none;
     }
-
 
     /* ACF Input
     ========================================================================== */
@@ -52,7 +46,6 @@
       height: unset;
     }
 
-
     /* ACF Range
     ========================================================================== */
 
@@ -60,7 +53,6 @@
       min-width: 4em !important;
       text-align: center;
     }
-
 
     /* ACF Tooltip
     ========================================================================== */
@@ -72,7 +64,6 @@
       font-size: 1rem;
       cursor: help;
     }
-
 
     /* ACF Related Posts for WordPress
     ========================================================================== */
@@ -91,26 +82,20 @@
           float: none;
           margin-left: 0;
         }
-
       }
-
     }
-
 
     /* ACF Image Uploader
     ========================================================================== */
 
     .acf-image-uploader {
-
       .acf-button {
         display: block;
         margin-top: 1em;
         max-width: 6.5em;
         text-align: center;
       }
-
     }
-
 
     /* ACF Table Editor
     ========================================================================== */
@@ -118,8 +103,8 @@
     .acf-table-cell-editor {
       border-color: $primary;
 
-      &:before,
-      &:after {
+      &::before,
+      &::after {
         border-top-color: $primary;
       }
 
@@ -127,30 +112,24 @@
         background-color: $dark;
         color: $white;
       }
-
     }
-
 
     /* Select2
     ========================================================================== */
 
     .select2 {
-
       .select2-selection__clear {
         font-weight: normal;
         margin-top: -4px;
         right: 20px;
         font-size: 26px;
       }
-
     }
-
 
     /* ACF Switch
     ========================================================================== */
 
     .acf-switch {
-
       &.-on {
         background: $primary;
         border-color: $primary;
@@ -162,9 +141,7 @@
         .acf-switch-slider {
           border-color: $primary;
         }
-
       }
-
     }
 
     .acf-fc-popup {
@@ -173,18 +150,14 @@
       }
     }
 
-
     /* ACF Relationship Field
     ========================================================================== */
 
     .acf-relationship .list .acf-rel-item {
-
       &:hover {
         background: $primary;
       }
-
     }
-
 
     /* ACF Accordion Field
     ========================================================================== */
@@ -218,17 +191,13 @@
 
       &:hover,
       &.-open {
-
         .acf-accordion-title {
           color: $white;
           background: $primary;
           border-color: $primary;
         }
-
       }
-
     }
-
 
     /* WP Content Editor
     ========================================================================== */
@@ -237,18 +206,13 @@
       background: transparent;
       padding-top: 0;
     }
-
   }
-
 }
-
 
 /* ACF Settings
 ========================================================================== */
 
 .acf-settings-wrap {
-
-
   /* ACF Settings Header
   ========================================================================== */
 
@@ -259,16 +223,14 @@
     font-weight: 500;
     padding: 75px 50px;
 
-    &:after {
+    &::after {
       content: 'Theme Options';
       display: block;
       font-size: 16px;
       font-weight: 300;
       color: darken($white, 10%);
     }
-
   }
-
 
   /* ACF Settings Notices
   ========================================================================== */
@@ -276,7 +238,6 @@
   .notice {
     margin: 0 !important;
   }
-
 
   /* ACF Postbox
   ========================================================================== */
@@ -288,7 +249,6 @@
       margin: 0 !important;
       padding: 10px 10px 10px 0 !important;
     }
-
   }
 
   #poststuff {
@@ -323,14 +283,12 @@
         border: none;
 
         .inside {
-
           #major-publishing-actions {
             background: transparent;
             border: none;
           }
 
           #publishing-action {
-
             @keyframes spin {
               0% {
                 transform: rotate(0deg);
@@ -349,23 +307,16 @@
                 width: 18px;
                 height: 18px;
                 margin-right: 15px;
-                border: .25rem solid rgba($white, 0.2);
+                border: 0.25rem solid rgba($white, 0.2);
                 border-top-color: $white;
                 animation: spin 1s infinite linear;
               }
-
             }
-
           }
-
         }
-
       }
-
     }
-
   }
-
 
   /* Handlediv
   ========================================================================== */
@@ -374,9 +325,7 @@
   .hndle {
     display: none !important;
   }
-
 }
-
 
 /* ACF Seamless Display
 ========================================================================== */
@@ -397,20 +346,16 @@
     padding: 10px 10px 10px 160px !important;
 
     .acf-field-group {
-
       .acf-field .acf-label label {
         font-weight: 500;
         margin-bottom: 0;
       }
-
     }
-
 
     /* ACF Swatch List
     ========================================================================== */
 
     .acf-swatch-list {
-
       > li {
         display: inline-block;
         width: 25%;
@@ -429,13 +374,9 @@
           &:hover .swatch-toggle {
             border-color: $trim-dark;
           }
-
         }
-
       }
-
     }
-
 
     /* ACF Field
     ========================================================================== */
@@ -453,15 +394,13 @@
         font-size: 1.1em;
         margin-bottom: 8px;
       }
-
     }
 
-    &:before {
+    &::before {
       background: $trim-darker;
       border-right: $trim-dark;
       width: 150px;
     }
-
 
     /* ACF Tabs
     ========================================================================== */
@@ -491,13 +430,12 @@
     } */
 
     .acf-tab-wrap.-left {
-
       .acf-tab-group {
         width: 150px !important;
         border: none;
         margin-top: 0;
 
-        &:before {
+        &::before {
           display: block;
           background: url($logo) center center no-repeat;
           background-size: contain;
@@ -520,33 +458,24 @@
             border: none;
           }
 
-          &.active, &:hover {
-
+          &.active,
+          &:hover {
             a {
               color: $white;
               background: $primary;
             }
-
           }
-
         }
-
       }
-
     }
-
   }
-
 }
-
 
 /* ACF Popup
 ========================================================================== */
 
 .acf-fc-popup {
-
   a:hover {
     background: $primary;
   }
-
 }

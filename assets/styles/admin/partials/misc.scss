@@ -2,7 +2,6 @@
    #Miscellaneous
    ========================================================================== */
 
-
 /* Nav Tabs
 ========================================================================== */
 
@@ -13,11 +12,10 @@
   border-bottom-color: $white-ter;
 }
 
-
 /* Responsive Admin Menu Toggle
 ========================================================================== */
 
-div#wp-responsive-toggle a:before {
+div#wp-responsive-toggle a::before {
   color: $white;
 }
 
@@ -30,10 +28,9 @@ div#wp-responsive-toggle a:before {
   background: darken($trim-darker, 25%);
 }
 
-.wp-responsive-open #wpadminbar #wp-admin-bar-menu-toggle .ab-icon:before {
+.wp-responsive-open #wpadminbar #wp-admin-bar-menu-toggle .ab-icon::before {
   color: $white;
 }
-
 
 /* TinyMCE
 ========================================================================== */

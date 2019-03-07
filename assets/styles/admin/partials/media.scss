@@ -2,7 +2,6 @@
    #MEDIA
    ========================================================================== */
 
-
 /* Media Item / Media Progress Bar
 ========================================================================== */
 
@@ -10,7 +9,6 @@
 .media-progress-bar div {
   background-color: $primary;
 }
-
 
 /* Media Attachment
 ========================================================================== */
@@ -24,7 +22,6 @@
   box-shadow: 0 0 0 1px white, 0 0 0 2px $primary;
 }
 
-
 /* Media Selection
 ========================================================================== */
 
@@ -32,18 +29,15 @@
   box-shadow: 0 0 0 1px white, 0 0 0 3px $primary;
 }
 
-
 /* Media Modal
 ========================================================================== */
 
 .media-modal-close {
-
   &:hover,
   &:focus {
     color: $primary;
     border-color: $primary;
   }
-
 }
 
 .media-frame a {
@@ -54,5 +48,4 @@
     color: $primary;
     box-shadow: none;
   }
-
 }

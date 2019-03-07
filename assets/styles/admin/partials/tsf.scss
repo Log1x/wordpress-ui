@@ -3,16 +3,13 @@
    ========================================================================== */
 
 #tsf-inpost-box {
-
   .handlediv,
   .hndle {
     display: none;
   }
 
   .tsf-flex {
-
     .tsf-flex-setting {
-
       .tsf-flex-setting-label {
         background: $trim-darker;
         color: $white;
@@ -26,9 +23,7 @@
         strong {
           font-weight: 500;
         }
-
       }
-
     }
 
     .tsf-flex-nav-tab-wrapper {
@@ -39,22 +34,15 @@
         color: $white;
 
         .tsf-flex-nav-tab {
-
           .tsf-flex-nav-tab-radio:checked + .tsf-flex-nav-tab-label {
             box-shadow: none;
             background: $primary;
           }
-
         }
-
       }
-
     }
-
   }
-
 }
-
 
 /* SEO Framework Extension Bloat
 ========================================================================== */

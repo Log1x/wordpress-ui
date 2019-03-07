@@ -10,7 +10,7 @@ Here lives a modernized approach to the WordPress Admin UI.
 ## Installation 
 
 ```sh
-$ yarn add git+ssh://git@github.com/log1x/wordpress-ui.git
+$ yarn add wordpress-ui
 ```
 
 ## Example Usage 
@@ -58,7 +58,7 @@ $ yarn install && yarn run build
 
 ## License
 
-Closed Source. Do not redistribute.
+WordPress UI is provided under the [MIT License](https://github.com/log1x/wordpress-ui/blob/master/LICENSE).
 
 
 [Yarn]: <https://yarnpkg.com/>

@@ -2,7 +2,6 @@
    #WORDPRESS LOGIN
    ========================================================================== */
 
-
 /* Body
 ========================================================================== */
 
@@ -14,16 +13,12 @@ body.login {
   font-weight: 500;
 
   a {
-
     &:focus {
       color: $primary;
       box-shadow: 0 0 0 1px $primary, 0 0 2px 1px rgba($primary, 0.8);
     }
-
   }
-
 }
-
 
 /* Auth Check
 ========================================================================== */
@@ -32,15 +27,22 @@ body.login {
   background-color: $primary;
 }
 
-
 /* Navigiation
 ========================================================================== */
 
-.login #nav,
-.login #backtoblog {
-  display: none;
-}
+.login {
+  #nav,
+  #backtoblog {
+    display: none;
+    padding: 0 10px 0;
+  }
 
+  label {
+    color: darken($white, 15%);
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+}
 
 /* Login Box
 ========================================================================== */
@@ -61,7 +63,7 @@ body.login {
       width: 84px;
       font-size: 0 !important;
 
-      &:after {
+      &::after {
         background: url($logo) center center no-repeat;
         background-size: contain;
         width: 48px;
@@ -69,13 +71,9 @@ body.login {
         display: block;
         content: '';
       }
-
     }
-
   }
-
 }
-
 
 /* Login Message / Error
 ========================================================================== */
@@ -90,7 +88,6 @@ body.login {
   a {
     color: $primary;
   }
-
 }
 
 .login .message {
@@ -101,14 +98,12 @@ body.login {
   border-left-color: $danger;
 }
 
-
 /* Login Button
 ========================================================================== */
 
 .login .button-primary {
   padding: 4px 8px;
 }
-
 
 /* Login Submit
 ========================================================================== */
@@ -134,7 +129,7 @@ body.login {
   &:active {
     background: darken($primary, 10%);
     border-color: darken($primary, 15%);
-    box-shadow: inset 0 2px 0 rgba($black, 0.15);
+    box-shadow: inset 0 2px 0 rgba($black, 0.15) !important;
   }
 
   &[disabled],
@@ -150,32 +145,7 @@ body.login {
   &.button-hero {
     box-shadow: 0 2px 0 rgba($black, 0.15) !important;
   }
-
-  &:active {
-    box-shadow: inset 0 3px 0 rgba($black, 0.15) !important;
-  }
-
 }
-
-
-/* Login Labels
-========================================================================== */
-
-.login {
-
-  #nav,
-  #backtoblog {
-    padding: 0 10px 0;
-  }
-
-  label {
-    color: darken($white, 15%);
-    font-weight: 300;
-    text-transform: uppercase;
-  }
-
-}
-
 
 /* Login Form
 ========================================================================== */
@@ -185,16 +155,14 @@ body.login {
 #lostpasswordform {
   border-radius: 4px;
   background-color: $trim-darker;
-  box-shadow: 0 1px 3px rgba($trim-darker, .13);
+  box-shadow: 0 1px 3px rgba($trim-darker, 0.13);
   padding: 25px;
 }
-
 
 /* Login Inputs
 ========================================================================== */
 
 .login form input {
-
   &[type="text"],
   &[type="password"] {
     background-color: $trim-darker;
@@ -209,15 +177,13 @@ body.login {
     box-shadow: inset 0 0 2px rgba($black, 0.15);
     border-color: $trim-dark;
 
-    &:checked:before {
+    &:checked::before {
       color: $white;
     }
-
   }
 
   &:focus {
     box-shadow: inset 0 0 2px rgba($black, 0.15);
     border-color: $primary;
   }
-
 }

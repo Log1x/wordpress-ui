@@ -7,7 +7,7 @@
   border-color: darken($primary, 5%);
 }
 
-.wp-pointer .wp-pointer-content h3:before {
+.wp-pointer .wp-pointer-content h3::before {
   color: $primary;
 }
 
