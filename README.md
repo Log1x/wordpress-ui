@@ -1,6 +1,12 @@
 # WordPress UI
 
-Here lives a modernized approach to the WordPress Admin UI.
+Here lives a modernized approach to the WordPress Admin UI. It is extremely opinionated, but what I find much better than WordPress defaults. It also includes styling for ACF, SEO Framework, WordPress SEO, and various other plugins. If you have seen various screenshots I have floating around, specifically of my ACF tabs/theme options– this is it.
+
+The SCSS is admittedly not the prettiest to read/look at. Styling the backend of WordPress is a disaster– but that isn't to say there aren't redundent styles or that it couldn't of been done more efficiently, I simply just do not have the willpower to test every little change and over-optimize everything.
+
+This was originally closed source, but I figured I might as well open it up in case anyone wants to contribute.
+
+All colors used are variables and can be found in `assets/styles/config` – simply just set your own variables before importing as you would any other SCSS project.
 
 ## Dependencies
 
