@@ -31,7 +31,7 @@
 
 #adminmenu li.menu-top .toplevel_page_acf-options-theme-options .wp-menu-image {
   &::before {
-    background: url($logo) center center no-repeat;
+    background: str-replace(url($logo), '#', '%23') center center no-repeat;
     background-size: contain;
     width: 16px;
     height: 16px;

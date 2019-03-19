@@ -2,14 +2,6 @@
 //   #MIXINS
 //   ========================================================================== */
 
-// Responsive, human readable media query
-// mixins based on Bulma and Sass MQ.
-//
-// .usage {
-//   @include from($desktop) {
-//     font-size: 2rem;
-//   }
-// }
 @mixin from($device) {
   @media screen and (min-width: $device) {
     @content;

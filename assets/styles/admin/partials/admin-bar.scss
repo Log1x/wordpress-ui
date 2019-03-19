@@ -133,7 +133,7 @@
   }
 
   &::before {
-    background: url($admin-bar-logo) center center no-repeat !important;
+    background: str-replace(url($admin-bar-logo), '#', '%23') center center no-repeat !important;
     background-size: contain;
     width: $admin-bar-logo-width;
     height: $admin-bar-logo-height;

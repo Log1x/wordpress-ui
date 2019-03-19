@@ -64,7 +64,7 @@ body.login {
       font-size: 0 !important;
 
       &::after {
-        background: url($logo) center center no-repeat;
+        background: str-replace(url($logo), '#', '%23') center center no-repeat;
         background-size: contain;
         width: 48px;
         height: 48px;

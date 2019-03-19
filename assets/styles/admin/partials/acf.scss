@@ -437,7 +437,7 @@
 
         &::before {
           display: block;
-          background: url($logo) center center no-repeat;
+          background: str-replace(url($logo), '#', '%23') center center no-repeat;
           background-size: contain;
           width: 56px;
           height: auto;
